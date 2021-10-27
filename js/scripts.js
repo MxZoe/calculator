@@ -14,6 +14,9 @@ function divide(number1, number2){
   return number1 / number2;
 }
 
+function modulo(number1, number2){
+  return number1 % number2;
+}
 
 const num1 = parseInt(prompt("Enter a number: "));
 const num2 = parseInt(prompt("Enter a second number: "));
