@@ -6,6 +6,9 @@ function subtract(number1, number2){
   return number1 - number2;
 }
 
+function multiply(number1, number2){
+  return number1 * number2;
+}
 
 const num1 = parseInt(prompt("Enter a number: "));
 const num2 = parseInt(prompt("Enter a second number: "));
