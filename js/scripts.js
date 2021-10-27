@@ -1,5 +1,5 @@
 function add(number1, number2){
-  return number1 + number 2;
+  return number1 + number2;
 }
 
 const num1 = parseInt(prompt("Enter a number: "));
