@@ -41,4 +41,22 @@ $(document).ready(function(){
     $("#subtract").trigger("reset");
     event.preventDefault();
   });
+
+  $("form#mult").submit(function(event){
+    const num1= parseInt($("#mult1").val());
+    const num2 = parseInt($("#mult2").val());
+    const result = multiply(num1,num2);
+    $("#result").text(result);
+    $("#mult").trigger("reset");
+    event.preventDefault();
+  });
+
+  $("form#division").submit(function(event){
+    const num1= parseInt($("#div1").val());
+    const num2= parseInt($("#div2").val());
+    const result= divide(num1, num2);
+    $("#result").text(result);
+    $("#division").trigger("reset");
+    event.preventDefault();
+  })
 });
