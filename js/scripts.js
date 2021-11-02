@@ -1,3 +1,4 @@
+//business logic
 function add(number1, number2){
   return number1 + number2;
 }
@@ -18,12 +19,26 @@ function modulo(number1, number2){
   return number1 % number2;
 }
 
-const num1 = parseInt(prompt("Enter a number: "));
-const num2 = parseInt(prompt("Enter a second number: "));
-const resultAdd = add(num1, num2);
-const resultSub = subtract(num1,num2);
-const resultMult = multiply(num1,num2);
-const resultDiv = divide(num1, num2);
 
-alert("addition: " + resultAdd + ", " + "subtraction: " + resultSub + ", " +
-"multiplication: " + resultMult + ", " + "division: " + resultDiv + ".");
+
+//user interface
+$(document).ready(function(){
+ 
+  $("form#add").submit(function(event) {
+    const num1 = parseInt($("#add1").val());
+    const num2 = parseInt($("#add2").val());
+    const result = add(num1,num2);
+    $("#result").text(result);
+    $("#add").trigger("reset");
+    event.preventDefault();
+  });
+
+  $("form#subtract").submit(function(event){
+    const num1 = parseInt($("#subtract1").val());
+    const num2 = parseInt($("#subtract2").val());
+    const result = subtract(num1,num2);
+    $("#result").text(result);
+    $("#subtract").trigger("reset");
+    event.preventDefault();
+  });
+});
