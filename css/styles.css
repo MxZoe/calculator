@@ -2,3 +2,17 @@
   font-weight: bold;
 }
 
+.card{
+  text-align: center;
+  width: max-content;
+  margin: auto;
+}
+
+#formOne{
+  margin-bottom: 2%;
+}
+
+.btn-primary{
+  margin-left: 47%;
+  margin-right: 47%%;
+}
